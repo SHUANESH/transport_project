@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body{
+    background-image:linear-gradient(to right , rgb(255, 168, 232),rgb(255, 180, 109));
+}
+
+#BIG_continar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#container{
+
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(255, 184, 249);
+    border-radius: 10%;
+    text-align: center;
+}
+
+#selectID{
+   margin-left: 37%;
+   margin-bottom: 50px;
+   margin-top: 15px;
+
+
+}
+
+#label_of_sel{
+   margin-left: 37%;
+}
+
+#form{
+    display: flex;
+    flex-wrap:wrap ;
+    flex-direction: column;
+    margin-top:30px;
+    justify-content: space-around;
+    align-content:center;
+    align-items: flex-start;
+    
+}
+input:focus{
+background-color: rgb(255, 195, 225);
+}
+
+
+
+input{
+    padding: 5px;
+    margin: 5px;
+}
+
+#button{
+
+    font-size: 25px;
+    background-color: rgb(233, 168, 190);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    margin-left: 38%;
+    border-radius:10%;
+    padding: 10px;
+    
+}
+
+#button:hover{
+    color: rgb(113, 38, 109);
+    opacity: 0.7;
+    cursor: pointer;
+    font-size: 23px;
+
+}
+
+#continr{
+    position:relative;
+    top: 250px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.7;
+
+}
+
+table{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 2px 12px rgba(32, 32, 32, 0.3);
+    background: #fefefe;
+    text-align: center;
+}
+
+th , td{
+    padding: 13px 15px;
+}
+
+th{
+  background: #ba68c8;
+  color: #fefefe;
+  text-transform: uppercase;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+td{
+    font-family: fantasy;
+}
+
+.tr:nth-child(odd){
+    background-color:#eeee ;
+}
+
+@media all and (min-width: 850px) {
+
+    #BIG_continar{
+        display: flex;
+        justify-content:space-around;
+        align-items:center;
+    }
+
+    #selectID{
+      margin-left: 5%;
+      margin-top: 15px;
+    }
+
+    #label_of_sel{
+        text-align: center;
+        margin-left: 5% ;
+    }
+    #button{
+        margin-left: 8%;
+    }
+
+    table{
+       width: 500%;
+    }
+
+
+}
