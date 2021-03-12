@@ -31,7 +31,7 @@ class Private_car extends Means_of_transport{
     }
 
     print_function_child1(){
-        return `The name of the means of transport is ${this.name_of_the_truck} ,${super.print_function()} `;
+        return `The name of the means of transport is ${this.name_of_the_Private_car} ,${super.print_function()} `;
     }
 
     get caps_lock1(){
@@ -52,7 +52,7 @@ class Bus extends Means_of_transport{
     }
 
     print_function_child2(){
-        return `The name of the means of transport is ${this.name_of_the_truck} ,${super.print_function()} `;
+        return `The name of the means of transport is ${this.name_of_the_bus} ,${super.print_function()} `;
     }
 
     get caps_lock2(){
